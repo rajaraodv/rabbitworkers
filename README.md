@@ -17,6 +17,7 @@ Specifically it shows:
 
 <ul>
 <li>cd to RabbitWorkers/worker folder </li>
+<li> `npm install` </li>
 <li> Push the app to cloud foundry as `standalone` (background app) app w/ 4 instances & connect to RabbitMQ service w/ name `rabbit-service1`
 
 </li>
@@ -92,7 +93,8 @@ Checking rabbitworker... OK
 ```
 
 <ul>
-<li>cd to RabbitWorkers/procducer folder </li>
+<li>cd to RabbitWorkers/producer folder </li>
+<li> `npm install` </li>
 <li> Push the app to cloud foundry as `standalone` (background app) app w/ RabbitMQ service `rabbit-service1`
 
 </li>
@@ -282,7 +284,7 @@ Total tasks processed: 6
 ```
 
 
-<h4> Play around w/ the below function to simulate long jobs and worker-crashes</h4>
+<h4> Play around w/ `doTask` function in `worker/app.js` to simulate long jobs and worker-crashes</h4>
 
 ```javascript
 
@@ -330,10 +332,16 @@ Install <a href='http://www.rabbitmq.com/download.html' target='_blank'>RabbitMQ
 Simply open at least 2 terminal windows for worker and 1 more for producer.
 </li>
 <li>
-cd to rabbitworker/worker in worker terminals and run `node app.js`. And keep them running.
+cd to rabbitworker/worker in worker terminals, do `npm install` and run `node app.js`. And keep them running.
 </li>
 <li>
-cd to rabbitworker/producer and then push the job.
+cd to rabbitworker/producer  do `npm install` and run `node app.js`
+</li>
+<li>
+Check the console.log outputs in worker terminal windows.
+</li>
+<li>
+ Play around w/ `doTask` function in `worker/app.js` to simulate long jobs and worker-crashes
 </li>
 </ul>
 

@@ -329,7 +329,7 @@ function doTask(q, task, redelivered) {
 Install <a href='http://www.rabbitmq.com/download.html' target='_blank'>RabbitMQ</a>
 </li>
 <li>
-Simply open at least 2 terminal windows for worker and 1 more for producer.
+Simply open at least 2 terminal windows for workers and 1 more for producer.
 </li>
 <li>
 cd to rabbitworker/worker in worker terminals, do `npm install` and run `node app.js`. And keep them running.
